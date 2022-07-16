@@ -7,3 +7,11 @@ CLUSTER 1 -> CaAlO13H20
 CLUSTER 2 -> Ca2AlSiO26H40
 CLUSTER 3 -> Ca4AlSi3O20H16
 CLUSTER 4 -> Ca4Al2Si2o20H16
+
+#energy.py
+
+Programa para recoger todas las energías que han aparecido en un determinado cálculo, así como el nombre las estructuras con una determinada energía en un diccionario dict(tot). Se seleccionan las estructuras con una energía umbral por debajo de la mejor del cálculo y en doc4 se guardan sus POSCARS. En doc5 se guardan las energías de las estructuras seleccionadas
+
+#Directorios cluster1,2,3,4 
+
+Se recogen los programas particulares para la generación de mapas y propiedades
