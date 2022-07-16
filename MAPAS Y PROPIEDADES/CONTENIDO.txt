@@ -8,12 +8,35 @@ CLUSTER 2 -> Ca2AlSiO26H40
 CLUSTER 3 -> Ca4AlSi3O20H16
 CLUSTER 4 -> Ca4Al2Si2o20H16
 
-#energy.py
+Aqui se resume brevemente el contenido de cada archivo, directorio y subdirectorio
+
+######################################################################      energy.py      ##################################################################
 
 Programa para recoger todas las energías que han aparecido en un determinado cálculo, así como el nombre las estructuras con una determinada energía en un 
 diccionario dict(tot). Se seleccionan las estructuras con una energía umbral por debajo de la mejor del cálculo y en doc4 se guardan sus POSCARS. En doc5 se 
-guardan las energías de las estructuras seleccionadas. Dentro de cada uno de los drectorios, cluster1,2,3,4 se encuentra un un directorio, llamado ENERGIA_SELEC en el que se recogen todos los documentos necesarios para la ejecución de este programa, así como los archivos resultantes tras su ejecución.
+guardan las energías de las estructuras seleccionadas. Dentro de cada uno de los directorios, cluster1,2,3,4 se encuentra un directorio, llamado 
+ENERGIA_SELEC en el que se recogen todos los documentos necesarios para la ejecución de este programa, así como los archivos resultantes tras su ejecución.
+El archivo n_POSCARS (donde n=1,2,3,4), es el archivo más importante de todos ello, por contener los POSCARS de las estrcuturas seleccionadas. Esta infromación
+es imprescindible para la contrucción de una base de datos con las propiedades de todas las estructursa seleccionadas
 
-#Directorios cluster1,2,3,4 
+#################################################################   Directorios CLUSTER_1,2,3,4   #########################################################
 
-Se recogen los programas particulares para la generación de mapas y propiedades
+Cada directorio contiene dos subdirectorios:
+
+#ENERGIA_SELEC
+
+Tal y como se ha comentado, aquí se encuntran los resultados de la aplicación del algoritmo energy.py. 
+
+#PROPIEDADES
+
+Se encuentra el programa genérico desarrollado para el cálculo automático de algunas de las principales propiedades de cada estructura. Entre estas 
+propiedades se encontran por ejemplo: números de coordinació, ditancias interatómicas, número de enlaces de un determinado tipo etc. Este programa es 
+cluster_1.py y hace uso de algunas de las funciones intrínsecas de la librería ASE. Además del programa, se encuentran archivos individuales en los 
+que se recogen las propiedades de cada una de las estructuras, bajo el nombre n_PROPIEDAD_DE_INTERÉS, donde n=1,2,3,4 y la PROPIEDAD_DE_INTERÉS es alguna
+como las mensionadas anteriormente. 
+
+Finalmente, dentro de este directorio, hay un archivo llamado n_PROP, donde n=1,2,3,4, en el que se encuntra una base de datos completa de las propiedades
+de cada estructura. Este no es más que la combianción de todos los archivos n_PROPIEDAD_DE_INTERÉS que hay en el directorio en cuestión pero que contiene
+los datos de manera compacta.
+
+
