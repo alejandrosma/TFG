@@ -21,14 +21,14 @@ local, que en nuestro caso son SIESTA y GULP. SIESTA es el programa que más arc
 #######################################################################  OUTPUTS  #########################################################################
 Se recogen los outputs más importantes tras la ejecuión de la simulación correspondiente.
 
-#n_POSCARS_TOT
+#n_POSCARS_TOTAL
 
 Recoge los POSCARS de todas las estructuras generadas en la simulación
 
-#n_BEST_POSCARS
+#n_POSCARS
 
 Recogen los POSCARS de las mejores estructuras de cada generación. Estas se pueden visualizar introduciendo este archivo en un visualizador como VESTA
 
-#n_INDIVIDUALS
+#n_Individuals
 
 Información detallada de todos los dindividuos generados en una simulación
