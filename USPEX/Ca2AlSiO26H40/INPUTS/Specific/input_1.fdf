@@ -1,0 +1,69 @@
+%block PAO.BasisSize
+Al DZP
+Si DZP
+O  DZP
+H  DZP
+%endbloc PAO.BasisSize
+%Block PAO.Basis
+Ca   5      1.90213
+n=3   0   1   E    61.56667     4.61281
+     5.29940
+          1.00000
+n=4   0   2   E   164.86383     5.38785
+       6.76569     4.96452
+           1.00000     1.00000
+n=3   1   1   E    86.94959     3.48034
+        6.32716
+      1.00000
+n=4   1   1   E   112.03339     4.98424
+        7.49434
+        1.00000
+n=3   2   1   E    87.65847    5.83989
+        6.49046
+         1.00000
+%endblock PAO.Basis
+
+
+%Block ChemicalSpeciesLabel
+1 20 Ca
+2 13 Al
+3 14 Si
+4 8  O
+5 1  H
+%endblock ChemicalSpeciesLabel
+
+xc.functional GGA
+xc.authors PBE
+
+DM.tolerance 1.E-4
+DM.NumberPulay 5
+DM.MixingWeight 0.1
+
+MD.TypeOfRun CG
+MD.MaxForceTol 0.04 eV/Ang
+MD.NumCGsteps 300
+
+WriteCoorStep true
+WriteForces true
+
+MM.UnitsDistance Ang  # what this program prints out DO NOT CHANGE
+MM.UnitsEnergy    eV  # what this program prints out DO NOT CHANGE
+MM.Grimme.S6     0.75 # Grimme-paper for PBE (correct for your functional)
+MM.Grimme.D     20.   # Grimme-paper (correct for your functional)
+%block MM.Potentials
+  1   1 Grimme    111.94      2.948 # Ca, 10.1002/jcc.20495
+  1   2 Grimme    111.88      3.113 # Ca / Al
+  1   3 Grimme    103.48      3.190 # Ca / Si
+  1   4 Grimme     28.50      2.816 # Ca / O
+  1   5 Grimme     12.74      2.475 # Ca / H
+  2   2 Grimme    111.83      3.278 # Al, 10.1002/jcc.20495
+  2   3 Grimme    103.43      3.355 # Al / Si
+  2   4 Grimme     28.48      2.981 # Al / O
+  2   5 Grimme     12.74      2.640 # Al / H
+  3   3 Grimme     95.66      3.432 # Si, 10.1002/jcc.20495
+  3   4 Grimme     26.34      3.058 # Si / O
+  3   5 Grimme     11.78      2.717 # Si / H
+  4   4 Grimme      7.26      2.684 # O, 10.1002/jcc.20495
+  4   5 Grimme      3.24      2.343 # O / H
+  5   5 Grimme      1.45      2.002 # H, 10.1002/jcc.20495
+%endblock MM.Potentials
