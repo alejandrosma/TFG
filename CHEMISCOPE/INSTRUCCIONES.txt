@@ -1,14 +1,13 @@
 En este archivo se describe el procedimiento paso a paso para todo aquel interesado en ver los mapas construidos para todos los clusters (CaAlO_13H_20, 
 Ca_2AlSiO_26H_40, Ca_4AlSi_3O_20H_16, Ca_4Al_2Si_2O_16H_20) de manera interactiva.
 
-1.- Descargar los 4 archivos de este directorio. En el nombre de cada uno se muestra la estequimetría del cluster.
+1.- Descargar los 4 archivos de este directorio. En el nombre de cada uno se muestra la estequiometría del cluster.
 2.- Ir a la página web https://chemiscope.org/
 3.- Seguir los siguientes pasos una vez en la página: Click en Load/Save, click en load dataset, subir uno de los archivos descargados previamente.
 
 A la izquierda se deberá de visualizar el mapa y a la derecha la estructura seleccionada con un punto rojo en el mapa. Algunas características adicionales:
 
-1.- Clickando en el número de la estructura seleccionada que hay abajo a la derecha (p.ej structure 1) se pueden ver las todas propidades presentes en la
-la base de datos construida.
-2.- Clickando en el icono de menu (tres lineas horizontales) arriba a la izquierda, se pueden cambiar la representación. P.ej. el color de los puntos puede
-pasar a representar el número de coordinación del Ca, en vez de la energía de la estructura (respecto a la energía del estado fundamental) que es la opción
-que hay puesta por defecto. De esta manera, se pueden ver rápidamente la variación de las propiedades por el mapa.
+1.- Clickando en el número de la estructura seleccionada que hay abajo a la derecha (p.ej structure 1) se pueden ver las todas propidades de dicha estructura,
+que están presentes en la base de datos construida.
+2.- Clickando en el boton "play" se van recorriendo las estructuras por el mapa de menor a mayor energía.
+2.- Clickando en el icono de menu (tres lineas horizontales) arriba a la izquierda, se puede cambiar la representación del mapa. P.ej. el color de los puntos puede pasar a representar el número de coordinación del Ca, en vez de la energía de la estructura (respecto a la energía del estado fundamental) que es la opción que hay puesta por defecto. De esta manera, se pueden ver rápidamente la variación de las propiedades por el mapa.
