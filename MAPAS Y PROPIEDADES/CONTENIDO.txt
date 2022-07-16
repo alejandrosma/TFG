@@ -31,7 +31,7 @@ Tal y como se ha comentado, aquí se encuntran los resultados de la aplicación 
 
 Se encuentra el programa genérico desarrollado para el cálculo automático de algunas de las principales propiedades de cada estructura. Entre estas 
 propiedades se encontran por ejemplo: números de coordinació, ditancias interatómicas, número de enlaces de un determinado tipo etc. Este programa es 
-cluster_1.py y hace uso de algunas de las funciones intrínsecas de la librería ASE. Además del programa, se encuentran archivos individuales en los 
+cluster_n.py, donde n=1,2,3,4 y hace uso de algunas de las funciones intrínsecas de la librería ASE. Además del programa, se encuentran archivos individuales en los 
 que se recogen las propiedades de cada una de las estructuras, bajo el nombre n_PROPIEDAD_DE_INTERÉS, donde n=1,2,3,4 y la PROPIEDAD_DE_INTERÉS es alguna
 como las mensionadas anteriormente. 
 
