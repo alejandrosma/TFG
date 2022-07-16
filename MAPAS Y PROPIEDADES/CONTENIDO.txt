@@ -1,0 +1,9 @@
+En este directo se recogen todos los archivos y programas de Python que han sido necesarios para construir los mapas y la base de datos de propiedades
+para todos los clusters.
+
+NOTACIÓN:
+
+CLUSTER 1 -> CaAlO13H20
+CLUSTER 2 -> Ca2AlSiO26H40
+CLUSTER 3 -> Ca4AlSi3O20H16
+CLUSTER 4 -> Ca4Al2Si2o20H16
