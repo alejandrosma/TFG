@@ -1,0 +1,61 @@
+******************************************
+*      TYPE OF RUN AND SYSTEM            *
+******************************************
+USPEX  : calculationMethod (USPEX, VCNEB, META)
+000    : calculationType (dimension: 0-3; molecule: 0/1; varcomp: 0/1)
+1      : AutoFrac
+
+% optType
+1
+% EndOptType
+
+% atomType
+Ca Al Si O H
+% EndAtomType
+
+% numSpecies
+2 1 1 26 40
+% EndNumSpecies
+
+% goodBonds
+0.1
+% EndGoodBonds
+
+******************************************
+*               POPULATION               *
+******************************************
+40   : populationSize 
+0    : initialPopSize
+1000 : numGenerations 
+50   : stopCrit 
+0.6  : bestFrac 
+0    : reoptOld
+******************************************
+*               ANTISEED                 *
+******************************************
+******************************************
+*          VARIATION OPERATORS           *
+******************************************
+0.60  : fracGene 
+0.10  : fracRand 
+0.10  : fracPerm 
+0.20  : fracAtomsMut 
+0.00  : fracLatMut
+******************************************
+*   DETAILS OF AB INITIO CALCULATIONS    * 
+******************************************
+% abinitioCode 
+2
+% ENDabinit
+
+% commandExecutable
+/software/siesta-4.0/siesta < input.fdf > output
+% EndExecutable
+
+%%%%%%%%%%%%%%%%%%
+
+80	   : pickUpGen
+6      : pickUpFolder
+46     : numParallelCalcs
+1      : whichCluster
+0      : ExternalPressure (GPa)
