@@ -10,7 +10,9 @@ CLUSTER 4 -> Ca4Al2Si2o20H16
 
 #energy.py
 
-Programa para recoger todas las energías que han aparecido en un determinado cálculo, así como el nombre las estructuras con una determinada energía en un diccionario dict(tot). Se seleccionan las estructuras con una energía umbral por debajo de la mejor del cálculo y en doc4 se guardan sus POSCARS. En doc5 se guardan las energías de las estructuras seleccionadas
+Programa para recoger todas las energías que han aparecido en un determinado cálculo, así como el nombre las estructuras con una determinada energía en un 
+diccionario dict(tot). Se seleccionan las estructuras con una energía umbral por debajo de la mejor del cálculo y en doc4 se guardan sus POSCARS. En doc5 se 
+guardan las energías de las estructuras seleccionadas. Dentro de cada uno de los drectorios, cluster1,2,3,4 se encuentra un un directorio, llamado ENERGIA_SELEC en el que se recogen todos los documentos necesarios para la ejecución de este programa, así como los archivos resultantes tras su ejecución.
 
 #Directorios cluster1,2,3,4 
 
