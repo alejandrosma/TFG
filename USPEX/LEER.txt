@@ -1,7 +1,8 @@
 En cada uno de los 4 directorios, se recogen los princiaples archivos necesarios para la ejecucción del código USPEX, así como los principales
 archivos de salida de la ejecucción del programa. Este tipo de resultados se dentigen en dos tipos de directorios
 
-#################################################################    INPUTS   ######################################################################
+####################################################################   INPUTS   #########################################################################
+
 Se recogen los principales archivos para la ejecución de porogrma
 
 #INPUT.txt 
